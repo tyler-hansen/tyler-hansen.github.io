@@ -10,8 +10,11 @@ navbar:
       href: Publications.html
     - text: "CV"
       href: CV.html
-    - text: "Contact"
-      href: Contact.html
+  right: 
+    - icon: fa-envelope fa-lg
+      href: mailto:<tyler.j.hansen@vanderbilt.edu>
+    - icon: ![](GitHub-Mark-Light-120px-plus.png)
+      href: http://github.com/tyler-hansen/
 output:
   html_document:
     theme: cosmo
