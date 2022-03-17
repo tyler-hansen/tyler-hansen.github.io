@@ -4,4 +4,12 @@ title: "Tyler Hansen"
 
 Hello! Welcome to my site! 
 
+## About Me
+I am a Senior Grad Student in Dr. Emily Hodges Lab at Vanderbilt University in Nashville, TN. 
+I developed a novel functional genomic assay called ATAC-STARR-seq, which quantifies regulatory activity of accessible chromatin. 
+My current study uses this method to investigate gene regulatory mechanisms of human evolution. 
+Outside of science, I enjoy spending time with my family! I love going on hikes and here I am pictured with Henry at Glacier National Park!
+
+![](images/glacier.jpg)
+
 ~Work in progress~
