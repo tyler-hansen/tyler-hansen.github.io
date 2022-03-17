@@ -2,4 +2,4 @@
 title: "About Me"
 ---
 
-Why I am awesome. 
+Welcome to my site! I am a Senior Grad Student in Dr. Emily Hodges Lab at Vanderbilt University. I developed a novel functional genomic assay called ATAC-STARR-seq, which quantifies regulatory activity of accessible chromatin. My current study uses ATAC-STARR-seq to investigate the gene regulatory mechanisms driving human evolution. I graduated with a B.S in Biochemistry from the University of Wisconsin-Madison (Go Badgers!). In the Hodges Lab, I employ both wet and dry lab techniques, which allows me to generate genomic data in the lab and analyze it at the command line. I specialize in R and bash languages and know enough python to get by.   
