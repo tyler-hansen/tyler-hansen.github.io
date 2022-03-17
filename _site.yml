@@ -1,0 +1,9 @@
+name: "Tyler Hansen"
+output_dir: "."
+navbar:
+  title: "Tyler Hansen"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About Me"
+      href: about.html
