@@ -1,1 +1,20 @@
 theme: jekyll-theme-minimal
+name: "Tyler Hansen"
+output_dir: "."
+navbar:
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "ATAC-STARR-seq"
+      href: ATAC-STARR.html
+    - text: "Publications"
+      href: Publications.html
+    - text: "CV"
+      href: CV.html
+    - text: "Contact"
+      href: Contact.html
+output:
+  html_document:
+    theme: cosmo
+    css: style.css      
+      
