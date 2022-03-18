@@ -1,0 +1,21 @@
+## __Vanderbilt | PhD__
+
+Barnett, K. R., Decato, B., Scott, T., __Hansen, T.__, Chen, B., Attalla, J., Smith, A., & Hodges, E. (2018).  ATAC-Me Captures Prolonged DNA Methylation of Dynamic Chromatin Accessibility Loci During Cell Fate Transitions.  Molecular Cell. 77(6), 1350–1364. https://doi.org/10.1016/j.molcel.2020.01.004. PMID: 31999955
+
+Guarnaccia, A. D., … __Hansen, T.__, … Tansey, W. P. (2021) Impact of WIN site inhibitor on the WDR5 interactome. Cell Reports. 34(3), 108636. https://doi.org/10.1016/j.celrep.2020.108636. PMID: 33472061
+
+## __NIH | Postbac__
+
+Rourke, C.K., Murat, D., __Hansen, T.__, and Jaramillo-Lambert, A. (2021) Endogenous localization of TOP-2 in C. elegans using a C-terminal GFP-tag. microPublication Biology. https://doi.org/10.17912/micropub.biology.000402. PMID: 34095779
+
+Fernando, L., Nguyen, V., __Hansen, T.__, Golden, A., & Allen, A. (2020). Loss of proteasome subunit RPN-12 causes an increased mean lifespan at a higher temperature in C. elegans. microPublication Biology. https://dx.doi.org/10.17912%2Fmicropub.biology.000234. PMID: 32550497
+
+Iyer, J., Devaul, N., __Hansen, T.__, & Nebenfuehr, B. (2019). Using Microinjection to Generate Genetically Modified Caenorhabditis elegans by CRISPR/Cas9 Editing. Methods Mol. Biol., 1874, 431—457. https://doi.org/10.1007/978-1-4939-8831-0_25. PMID: 30353529. (Invited book chapter).
+
+Kim, S., Twigg, S. R. F., Scanlon, V. A., Chandra, A., __Hansen, T.__, Alsubait, A., … Corsi, A. K. (2017). Localized TWIST1 and TWIST2 basic domain substitutions cause four distinct human diseases that can be modeled in Caenorhabditis elegans. Human Molecular Genetics, 26(11), 2118–2132. https://doi.org/10.1093/hmg/ddx107. PMID: 28369379.
+
+Jaramillo-Lambert, A., Fabritius, A. S., __Hansen, T.__, Smith, H. E., & Golden, A. (2016). The Identification of a Novel Mutant Allele of topoisomerase II in Caenorhabditis elegans Reveals a Unique Role in Chromosome Segregation During Spermatogenesis. Genetics, 204(4), 1407–1422. https://doi.org/10.1534/genetics.116.195099. PMID: 27707787. 
+
+## __Wisconsin | Undergrad__
+
+Kershner, A. M., Shin, H., __Hansen, T.__, & Kimble, J. (2014). Discovery of two GLP-1/Notch target genes that account for the role of GLP-1/Notch signaling in stem cell maintenance. Proceedings of the National Academy of Sciences of the United States of America, 111(10), 3739–3744. https://doi.org/10.1073/pnas.1401861111. PMID: 24567412.

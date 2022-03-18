@@ -11,14 +11,23 @@
 
 
 
-<title>Tyler Hansen</title>
+<title>index.knit</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -35,11 +44,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -52,35 +56,9 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 
-<link rel="stylesheet" href="style.css" type="text/css" />
+
 
 
 
@@ -89,10 +67,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -109,40 +83,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -170,7 +120,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -182,7 +132,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -193,10 +143,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -208,7 +171,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -275,7 +237,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -294,19 +256,31 @@ $(document).ready(function () {
   <a href="Publications.html">Publications</a>
 </li>
 <li>
-  <a href="CV.html">CV</a>
+  <a href="Tyler_Hansen_CV.pdf">CV</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="mailto:&lt;tyler.j.hansen@vanderbilt.edu&gt;">
-    <span class="fas fa-envelope fa-lg"></span>
+    <span class="fa fa-envelope"></span>
      
   </a>
 </li>
 <li>
   <a href="http://github.com/tyler-hansen/">
-    <span class=" "></span>
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/tyler_hansen_VU">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/tyler-hansen-7ba75273/">
+    <span class="fa fa-linkedin"></span>
      
   </a>
 </li>
@@ -315,20 +289,25 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
-<h1 class="title toc-ignore">Tyler Hansen</h1>
 
 </div>
 
 
-<p><img src="images/glacier.jpg" /></p>
-<p>I’m a 5th grad student in Dr. Emily Hodges Lab at Vanderbilt University. In the Hodges Lab, I develop and apply or use existing functional genomic technologies to understand gene regulatory evolution of humans. Specifically, I’ve developed <strong>ATAC-STARR-seq</strong>, a massively parallel reporter assay that quantifies regulatory activity of accessible chromatin.</p>
-<p>I’m currently 50/50 computational/experimental. This allows me to generate and analyze large functional genomic datasets, such as ATAC-STARR-seq. Along with fellow labmates, I’ve written <strong>HodgesTools</strong>, an R package that contains common-use functions to analyze various genomic datasets. In addition to <strong>R</strong>, I’ve written several <strong>python</strong> scripts for public use, including a script for ATAC-STARR-seq peak calling. I’ve also written tutorials and common-use <strong>bash</strong> functions like <em>read-ini</em> that can be viewed on my <a href="https://github.com/tyler-hansen">GitHub</a>.</p>
-<p>On the <em>life</em> side of work-life balance I enjoy hiking with my family, watching baseball, reading science fiction, and playing chess. Feel free to <a href="https://play.chess.com/1oKWt">play me</a> sometime!</p>
+<div id="about" class="section level1">
+<h1><strong>About</strong></h1>
+<p><img src="images/glacier.jpg" style="width:50%"></p>
+<p>I’m a 5th grad student in Dr. Emily Hodges Lab at Vanderbilt University. I develop and apply or use existing functional genomic technologies to understand gene regulatory evolution of humans. Specifically, I’ve developed <strong>ATAC-STARR-seq</strong>, a massively parallel reporter assay that quantifies regulatory activity of accessible chromatin.</p>
+<p>I’m currently 50/50 computational/experimental. Along with fellow labmates, I’ve written <strong>HodgesTools</strong>, an <strong>R</strong> package that contains common-use functions to analyze various genomic datasets. I’ve also written several <strong>python</strong> scripts, <strong>bash</strong> functions, and tutorials for public use that can be viewed on my <a href="https://github.com/tyler-hansen">Personal GitHub</a> or on the <a href="https://github.com/HodgesGenomicsLab/ATAC-STARR-seq">ATAC-STARR Github</a>.</p>
 <p>Before Grad School, I majored in <strong>Biochemistry</strong> at the University of Wisconsin-Madison and worked as an undergraduate researcher in Dr. Judith Kimble’s lab. In the Kimble lab, I studied the molecular processes that dictate stem cell self-renewal and differentiation decisions in the <em>C. elegans</em> germline. After graduating in 2015, I did a two-year postbac in Dr. Andy Golden’s lab at the National Institutes of Health, where I used CRISPR/Cas9 to model rare human diesases in <em>C. elegans</em> to discover dysfunctional genetic pathways that underlie rare disease.</p>
+<p>On the <em>life</em> side of work-life balance I enjoy hiking with my family, watching baseball, reading science fiction, and playing chess. Feel free to <a href="https://play.chess.com/1oKWt">play me</a> sometime!</p>
+<hr />
+<p>*CV last updated on 10/21/2022</p>
+<p>*Site made with the help of Nick and Lucy’s super awesome <a href="http://nickstrayer.me/RMarkdown_Sites_tutorial/">tutorial.</a></p>
+</div>
 
 
 
@@ -357,7 +336,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

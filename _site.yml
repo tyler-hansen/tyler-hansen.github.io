@@ -1,6 +1,7 @@
 name: "Tyler Hansen"
 output_dir: "."
 navbar:
+  name: "Tyler Hansen"
   left:
     - text: "Home"
       href: index.html
@@ -9,14 +10,16 @@ navbar:
     - text: "Publications"
       href: Publications.html
     - text: "CV"
-      href: CV.html
+      href: Tyler_Hansen_CV.pdf
   right: 
-    - icon: fa-envelope fa-lg
-      href: mailto:<tyler.j.hansen@vanderbilt.edu>
-    - icon: ![](GitHub-Mark-Light-120px-plus.png)
-      href: http://github.com/tyler-hansen/
+    - href: mailto:<tyler.j.hansen@vanderbilt.edu>
+      icon: fa-envelope
+    - href: http://github.com/tyler-hansen/
+      icon: fa-github
+    - href: https://twitter.com/tyler_hansen_VU
+      icon: fa-twitter 
+    - href: https://www.linkedin.com/in/tyler-hansen-7ba75273/
+      icon: fa-linkedin
 output:
   html_document:
     theme: cosmo
-    css: style.css      
-      

@@ -11,14 +11,23 @@
 
 
 
-<title>Publications.utf8</title>
+<title>Publications.knit</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -35,11 +44,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -52,35 +56,9 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 
-<link rel="stylesheet" href="style.css" type="text/css" />
+
 
 
 
@@ -89,10 +67,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -109,40 +83,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -170,7 +120,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -182,7 +132,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -193,10 +143,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -208,7 +171,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -275,7 +237,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -294,19 +256,31 @@ $(document).ready(function () {
   <a href="Publications.html">Publications</a>
 </li>
 <li>
-  <a href="CV.html">CV</a>
+  <a href="Tyler_Hansen_CV.pdf">CV</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="mailto:&lt;tyler.j.hansen@vanderbilt.edu&gt;">
-    <span class="fas fa-envelope fa-lg"></span>
+    <span class="fa fa-envelope"></span>
      
   </a>
 </li>
 <li>
   <a href="http://github.com/tyler-hansen/">
-    <span class=" "></span>
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/tyler_hansen_VU">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/tyler-hansen-7ba75273/">
+    <span class="fa fa-linkedin"></span>
      
   </a>
 </li>
@@ -315,7 +289,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -323,7 +297,23 @@ $(document).ready(function () {
 </div>
 
 
-
+<div id="vanderbilt-phd" class="section level2">
+<h2><strong>Vanderbilt | PhD</strong></h2>
+<p>Barnett, K. R., Decato, B., Scott, T., <strong>Hansen, T.</strong>, Chen, B., Attalla, J., Smith, A., &amp; Hodges, E. (2018). ATAC-Me Captures Prolonged DNA Methylation of Dynamic Chromatin Accessibility Loci During Cell Fate Transitions. Molecular Cell. 77(6), 1350–1364. <a href="https://doi.org/10.1016/j.molcel.2020.01.004" class="uri">https://doi.org/10.1016/j.molcel.2020.01.004</a>. PMID: 31999955</p>
+<p>Guarnaccia, A. D., … <strong>Hansen, T.</strong>, … Tansey, W. P. (2021) Impact of WIN site inhibitor on the WDR5 interactome. Cell Reports. 34(3), 108636. <a href="https://doi.org/10.1016/j.celrep.2020.108636" class="uri">https://doi.org/10.1016/j.celrep.2020.108636</a>. PMID: 33472061</p>
+</div>
+<div id="nih-postbac" class="section level2">
+<h2><strong>NIH | Postbac</strong></h2>
+<p>Rourke, C.K., Murat, D., <strong>Hansen, T.</strong>, and Jaramillo-Lambert, A. (2021) Endogenous localization of TOP-2 in C. elegans using a C-terminal GFP-tag. microPublication Biology. <a href="https://doi.org/10.17912/micropub.biology.000402" class="uri">https://doi.org/10.17912/micropub.biology.000402</a>. PMID: 34095779</p>
+<p>Fernando, L., Nguyen, V., <strong>Hansen, T.</strong>, Golden, A., &amp; Allen, A. (2020). Loss of proteasome subunit RPN-12 causes an increased mean lifespan at a higher temperature in C. elegans. microPublication Biology. <a href="https://dx.doi.org/10.17912%2Fmicropub.biology.000234" class="uri">https://dx.doi.org/10.17912%2Fmicropub.biology.000234</a>. PMID: 32550497</p>
+<p>Iyer, J., Devaul, N., <strong>Hansen, T.</strong>, &amp; Nebenfuehr, B. (2019). Using Microinjection to Generate Genetically Modified Caenorhabditis elegans by CRISPR/Cas9 Editing. Methods Mol. Biol., 1874, 431—457. <a href="https://doi.org/10.1007/978-1-4939-8831-0_25" class="uri">https://doi.org/10.1007/978-1-4939-8831-0_25</a>. PMID: 30353529. (Invited book chapter).</p>
+<p>Kim, S., Twigg, S. R. F., Scanlon, V. A., Chandra, A., <strong>Hansen, T.</strong>, Alsubait, A., … Corsi, A. K. (2017). Localized TWIST1 and TWIST2 basic domain substitutions cause four distinct human diseases that can be modeled in Caenorhabditis elegans. Human Molecular Genetics, 26(11), 2118–2132. <a href="https://doi.org/10.1093/hmg/ddx107" class="uri">https://doi.org/10.1093/hmg/ddx107</a>. PMID: 28369379.</p>
+<p>Jaramillo-Lambert, A., Fabritius, A. S., <strong>Hansen, T.</strong>, Smith, H. E., &amp; Golden, A. (2016). The Identification of a Novel Mutant Allele of topoisomerase II in Caenorhabditis elegans Reveals a Unique Role in Chromosome Segregation During Spermatogenesis. Genetics, 204(4), 1407–1422. <a href="https://doi.org/10.1534/genetics.116.195099" class="uri">https://doi.org/10.1534/genetics.116.195099</a>. PMID: 27707787.</p>
+</div>
+<div id="wisconsin-undergrad" class="section level2">
+<h2><strong>Wisconsin | Undergrad</strong></h2>
+<p>Kershner, A. M., Shin, H., <strong>Hansen, T.</strong>, &amp; Kimble, J. (2014). Discovery of two GLP-1/Notch target genes that account for the role of GLP-1/Notch signaling in stem cell maintenance. Proceedings of the National Academy of Sciences of the United States of America, 111(10), 3739–3744. <a href="https://doi.org/10.1073/pnas.1401861111" class="uri">https://doi.org/10.1073/pnas.1401861111</a>. PMID: 24567412.</p>
+</div>
 
 
 
@@ -352,7 +342,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
