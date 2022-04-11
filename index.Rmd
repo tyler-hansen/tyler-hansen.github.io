@@ -4,7 +4,7 @@
 <img src="images/glacier.jpg" style="width:50%">
 
 
-I'm a 5th grad student in Dr. Emily Hodges Lab at Vanderbilt University. I develop and apply or use existing functional genomic technologies to understand gene regulatory evolution of humans. Specifically, I've developed __ATAC-STARR-seq__, a massively parallel reporter assay that quantifies regulatory activity of accessible chromatin.   
+I'm a 5th year grad student in Dr. Emily Hodges Lab at Vanderbilt University. I develop and apply or use existing functional genomic technologies to understand gene regulatory evolution of humans. Specifically, I've developed __ATAC-STARR-seq__, a massively parallel reporter assay that quantifies regulatory activity of accessible chromatin.   
 
 
 I'm currently 50/50 computational/experimental. Along with fellow labmates, I've written __HodgesTools__, an __R__ package that contains common-use functions to analyze various genomic datasets. I've also written several __python__ scripts, __bash__ functions, and tutorials for public use that can be viewed on my [Personal GitHub](https://github.com/tyler-hansen) or on the [ATAC-STARR Github](https://github.com/HodgesGenomicsLab/ATAC-STARR-seq). 
