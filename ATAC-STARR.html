@@ -13,6 +13,7 @@
 
 <title>ATAC-STARR.knit</title>
 
+<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -299,12 +300,26 @@ $(document).ready(function () {
 
 <div id="atac-starr-seq" class="section level1">
 <h1><strong>ATAC-STARR-seq</strong></h1>
-<p><strong>ATAC-STARR-seq</strong> is a <em>three-in-one</em> approach that simultaneously profiles chromatin accessibility, transcription factor (TF) occupancy and regulatory activity of human genomes by pairing ATAC-seq (assay for transposase-accessible chromatin using sequencing) with STARR-seq (self-transcribing active regulatory region sequencing).</p>
-<p>View my interactive protocol on <a href="https://www.protocols.io/view/atac-starr-seq-rm7vz896rvx1/v2">protocols.io</a> to perform ATAC-STARR-seq in your own lab! And check out the ATAC-STARR code repository on <a href="https://github.com/HodgesGenomicsLab/ATAC-STARR-seq">GitHub.com</a> for some useful python scripts.</p>
+<p><strong>ATAC-STARR-seq</strong> is a <em>three-in-one</em> approach
+that simultaneously profiles chromatin accessibility, transcription
+factor (TF) occupancy and regulatory activity of human genomes by
+pairing ATAC-seq (assay for transposase-accessible chromatin using
+sequencing) with STARR-seq (self-transcribing active regulatory region
+sequencing). Check out our publication in <a
+href="https://genome.cshlp.org/content/early/2022/07/18/gr.276766.122.abstract">Genome
+Research</a>!</p>
+<p>View my interactive protocol on <a
+href="https://www.protocols.io/view/atac-starr-seq-rm7vz896rvx1/v2">protocols.io</a>
+to perform ATAC-STARR-seq in your own lab! And check out the ATAC-STARR
+code repository on <a
+href="https://github.com/HodgesGenomicsLab/ATAC-STARR-seq">GitHub.com</a>
+for some useful python scripts.</p>
 <hr />
 <div id="what-information-does-it-provide" class="section level3">
 <h3><strong>What information does it provide?</strong></h3>
-<p><strong>ATAC-STARR-seq</strong> provides the following <em>-omics</em> on an <strong>unbiased</strong> and <strong>global</strong> scale:</p>
+<p><strong>ATAC-STARR-seq</strong> provides the following
+<em>-omics</em> on an <strong>unbiased</strong> and
+<strong>global</strong> scale:</p>
 <ul>
 <li>Regulatory Acitivity</li>
 <li>Chromatin Accessibility</li>
@@ -315,16 +330,43 @@ $(document).ready(function () {
 </div>
 <div id="how-does-it-work" class="section level3">
 <h3><strong>How does it work?</strong></h3>
-<p>The <strong>ATAC-STARR-seq</strong> approach is divided into the three general parts:</p>
+<p>The <strong>ATAC-STARR-seq</strong> approach is divided into the
+three general parts:</p>
 <ol style="list-style-type: decimal">
 <li>ATAC-STARR-seq Plasmid Library Generation</li>
 <li>Reporter Assay</li>
 <li>Data Analysis</li>
 </ol>
 <p><img src="images/expt_design.png" style="width:70%"></p>
-<p>To generate ATAC-STARR-seq plasmid libraries, nuclei are isolated from a cell type of interest and exposed to Tn5, the cut-and-paste transposase used in the ATAC-seq method. Tn5 simultaneously cleaves DNA fragments within accessible chromatin and attaches customizable sequence adapters to their 5’ ends. ATAC-STARR-seq adapters are designed to serve as homology arms for direct Gibson cloning into the STARR-seq reporter plasmid, which enables cloning of accessible DNA fragments en masse. The resulting ATAC-STARR-seq plasmid library consists of millions of unique plasmids each harbouring their own unique open chromatin-derived DNA fragment.</p>
-<p>In our improved ATAC-STARR-seq workflow, we employ the STARR-seq Ori backbone, where the origin of replication (Ori) functions as the minimal promoter (Muerdter et al. 2018). Each plasmid in the ATAC-STARR-seq plasmid library contains a truncated GFP (trGFP) coding sequence, a poly-adenylation signal sequence, the Ori, and the unique accessible DNA fragment being assayed. Critically, the accessible region is cloned into the 3’ UTR, so if the accessible region is active, it interacts with the Ori to drive self-transcription. Thus, an accessible region’s level of activity is reflected by its own level of expression. Importantly, transcripts from ATAC-STARR-seq plasmids, termed “reporter RNAs”, are expressed at basal levels from the activity of the Ori itself. This allows detection of silencing activity—the inhibition of the basal expression—in this assay.</p>
-<p>Following its creation, the ATAC-STARR-seq plasmid library is transfected via electroporation into a given cell line. From the same flask of cells, both reporter RNAs and plasmid DNA are harvested 24 hours later, then prepared as Illumina sequencing libraries and sequenced. Activity is calculated as the log2 ratio between normalized read counts from the reporter RNA and plasmid DNA datasets.</p>
+<p>To generate ATAC-STARR-seq plasmid libraries, nuclei are isolated
+from a cell type of interest and exposed to Tn5, the cut-and-paste
+transposase used in the ATAC-seq method. Tn5 simultaneously cleaves DNA
+fragments within accessible chromatin and attaches customizable sequence
+adapters to their 5’ ends. ATAC-STARR-seq adapters are designed to serve
+as homology arms for direct Gibson cloning into the STARR-seq reporter
+plasmid, which enables cloning of accessible DNA fragments en masse. The
+resulting ATAC-STARR-seq plasmid library consists of millions of unique
+plasmids each harbouring their own unique open chromatin-derived DNA
+fragment.</p>
+<p>In our improved ATAC-STARR-seq workflow, we employ the STARR-seq Ori
+backbone, where the origin of replication (Ori) functions as the minimal
+promoter (Muerdter et al. 2018). Each plasmid in the ATAC-STARR-seq
+plasmid library contains a truncated GFP (trGFP) coding sequence, a
+poly-adenylation signal sequence, the Ori, and the unique accessible DNA
+fragment being assayed. Critically, the accessible region is cloned into
+the 3’ UTR, so if the accessible region is active, it interacts with the
+Ori to drive self-transcription. Thus, an accessible region’s level of
+activity is reflected by its own level of expression. Importantly,
+transcripts from ATAC-STARR-seq plasmids, termed “reporter RNAs”, are
+expressed at basal levels from the activity of the Ori itself. This
+allows detection of silencing activity—the inhibition of the basal
+expression—in this assay.</p>
+<p>Following its creation, the ATAC-STARR-seq plasmid library is
+transfected via electroporation into a given cell line. From the same
+flask of cells, both reporter RNAs and plasmid DNA are harvested 24
+hours later, then prepared as Illumina sequencing libraries and
+sequenced. Activity is calculated as the log2 ratio between normalized
+read counts from the reporter RNA and plasmid DNA datasets.</p>
 </div>
 </div>
 

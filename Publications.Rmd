@@ -1,6 +1,6 @@
 ## __Vanderbilt | PhD__
 
-__Hansen TJ__ & Hodges E: Identifying transcription factor-bound gene activators and silencers in the chromatin accessible human genome using ATAC-STARR-seq. bioRxiv. 2022:2022.2003.2025.485870. https://doi.org/10.1101/2022.03.25.485870.
+__Hansen TJ__ & Hodges E: ATAC-STARR-seq reveals transcription factor-bound activators and silencers across the chromatin accessible human genome. Genome Research. Advance Online. 2022. https://genome.cshlp.org/content/early/2022/07/18/gr.276766.122.abstract
 
 Barnett, K. R., Decato, B., Scott, T., __Hansen, T.__, Chen, B., Attalla, J., Smith, A., & Hodges, E. (2018).  ATAC-Me Captures Prolonged DNA Methylation of Dynamic Chromatin Accessibility Loci During Cell Fate Transitions.  Molecular Cell. 77(6), 1350–1364. https://doi.org/10.1016/j.molcel.2020.01.004. PMID: 31999955
 

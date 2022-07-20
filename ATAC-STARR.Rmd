@@ -1,6 +1,6 @@
 # __ATAC-STARR-seq__
 
-__ATAC-STARR-seq__ is a _three-in-one_ approach that simultaneously profiles chromatin accessibility, transcription factor (TF) occupancy and regulatory activity of human genomes by pairing ATAC-seq (assay for transposase-accessible chromatin using sequencing) with STARR-seq (self-transcribing active regulatory region sequencing).
+__ATAC-STARR-seq__ is a _three-in-one_ approach that simultaneously profiles chromatin accessibility, transcription factor (TF) occupancy and regulatory activity of human genomes by pairing ATAC-seq (assay for transposase-accessible chromatin using sequencing) with STARR-seq (self-transcribing active regulatory region sequencing). Check out our publication in [Genome Research](https://genome.cshlp.org/content/early/2022/07/18/gr.276766.122.abstract)! 
 
 View my interactive protocol on [protocols.io](https://www.protocols.io/view/atac-starr-seq-rm7vz896rvx1/v2) to perform ATAC-STARR-seq in your own lab! And check out the ATAC-STARR code repository on [GitHub.com](https://github.com/HodgesGenomicsLab/ATAC-STARR-seq) for some useful python scripts. 
 
