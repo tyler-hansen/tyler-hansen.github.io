@@ -1,22 +1,25 @@
 ## __Vanderbilt | PhD__
 
-__Hansen TJ__ & Hodges E: ATAC-STARR-seq reveals transcription factor-bound activators and silencers across the chromatin accessible human genome. Genome Research. Advance Online. 2022. https://genome.cshlp.org/content/early/2022/07/18/gr.276766.122.abstract
+__Hansen, T.__ and Hodges, E. (2022). ATAC-STARR-seq reveals transcription factor-bound activators and silencers across the chromatin accessible human genome. Genome Research 32, 1529-1541. doi: 10.1101/gr.276766.122. PMID: 35858748.
 
-Barnett, K. R., Decato, B., Scott, T., __Hansen, T.__, Chen, B., Attalla, J., Smith, A., & Hodges, E. (2018).  ATAC-Me Captures Prolonged DNA Methylation of Dynamic Chromatin Accessibility Loci During Cell Fate Transitions.  Molecular Cell. 77(6), 1350–1364. https://doi.org/10.1016/j.molcel.2020.01.004. PMID: 31999955
+Barnett, K. R., Decato, B., Scott, T., __Hansen, T.__, Chen, B., Attalla, J., Smith, A., & Hodges, E. (2020).  ATAC-Me Captures Prolonged DNA Methylation of Dynamic Chromatin Accessibility Loci During Cell Fate Transitions.  Molecular Cell. 77(6), 1350–1364. doi: https://doi.org/10.1016/j.molcel.2020.01.004. PMID: 31999955.
 
-Guarnaccia, A. D., … __Hansen, T.__, … Tansey, W. P. (2021) Impact of WIN site inhibitor on the WDR5 interactome. Cell Reports. 34(3), 108636. https://doi.org/10.1016/j.celrep.2020.108636. PMID: 33472061
+Guarnaccia, A. D., … __Hansen, T.__, … Tansey, W. P. (2021) Impact of WIN site inhibitor on the WDR5 interactome. Cell Reports. 34(3), 108636. doi: 10.1016/j.celrep.2020.108636. PMID: 33472061.
 
 ## __NIH | Postbac__
 
-Rourke, C.K., Murat, D., __Hansen, T.__, and Jaramillo-Lambert, A. (2021) Endogenous localization of TOP-2 in C. elegans using a C-terminal GFP-tag. microPublication Biology. https://doi.org/10.17912/micropub.biology.000402. PMID: 34095779
+Eustice, M., Konzman, D., Reece, J.M., Ghosh, S., Alston, J., __Hansen, T.__, Golden, A., Bond, M.R., Abramowitz, L.K., and Hanover, J.A. (2022). Nutrient sensing pathways regulating adult reproductive diapause in C. elegans. PLoS One. 17, e0274076. doi: 10.1371/journal.pone.0274076. PMID: 36112613
+.
+Rourke, C.K., Murat, D., __Hansen, T.__, and Jaramillo-Lambert, A. (2021) Endogenous localization of TOP-2 in C. elegans using a C-terminal GFP-tag. microPublication Biology. doi: 10.17912/micropub.biology.000402. PMID: 34095779.
 
-Fernando, L., Nguyen, V., __Hansen, T.__, Golden, A., & Allen, A. (2020). Loss of proteasome subunit RPN-12 causes an increased mean lifespan at a higher temperature in C. elegans. microPublication Biology. https://dx.doi.org/10.17912%2Fmicropub.biology.000234. PMID: 32550497
+Fernando, L., Nguyen, V., __Hansen, T.__, Golden, A., & Allen, A. (2020). Loss of proteasome subunit RPN-12 causes an increased mean lifespan at a higher temperature in C. elegans. microPublication Biology. doi: 10.17912/micropub.biology.000234. PMID: 32550497.
 
-Iyer, J., Devaul, N., __Hansen, T.__, & Nebenfuehr, B. (2019). Using Microinjection to Generate Genetically Modified Caenorhabditis elegans by CRISPR/Cas9 Editing. Methods Mol. Biol., 1874, 431—457. https://doi.org/10.1007/978-1-4939-8831-0_25. PMID: 30353529. (Invited book chapter).
+Iyer, J., Devaul, N., __Hansen, T.__, & Nebenfuehr, B. (2019). Using Microinjection to Generate Genetically Modified Caenorhabditis elegans by CRISPR/Cas9 Editing. Methods Mol. Biol., 1874, 431—457. doi: 10.1007/978-1-4939-8831-0_25. PMID: 30353529. (Invited book chapter).
 
-Kim, S., Twigg, S. R. F., Scanlon, V. A., Chandra, A., __Hansen, T.__, Alsubait, A., … Corsi, A. K. (2017). Localized TWIST1 and TWIST2 basic domain substitutions cause four distinct human diseases that can be modeled in Caenorhabditis elegans. Human Molecular Genetics, 26(11), 2118–2132. https://doi.org/10.1093/hmg/ddx107. PMID: 28369379.
+Kim, S., Twigg, S. R. F., Scanlon, V. A., Chandra, A., __Hansen, T. J.__, Alsubait, A., … Corsi, A. K. (2017). Localized TWIST1 and TWIST2 basic domain substitutions cause four distinct human diseases that can be modeled in Caenorhabditis elegans. Human Molecular Genetics, 26(11), 2118–2132. https://doi.org/10.1093/hmg/ddx107. PMID: 28369379.
 
-Jaramillo-Lambert, A., Fabritius, A. S., __Hansen, T.__, Smith, H. E., & Golden, A. (2016). The Identification of a Novel Mutant Allele of topoisomerase II in Caenorhabditis elegans Reveals a Unique Role in Chromosome Segregation During Spermatogenesis. Genetics, 204(4), 1407–1422. https://doi.org/10.1534/genetics.116.195099. PMID: 27707787. 
+Jaramillo-Lambert, A., Fabritius, A. S., __Hansen, T. J.__, Smith, H. E., & Golden, A. (2016). The Identification of a Novel Mutant Allele of topoisomerase II in Caenorhabditis elegans Reveals a Unique Role in Chromosome Segregation During Spermatogenesis. Genetics, 204(4), 1407–1422. https://doi.org/10.1534/genetics.116.195099. PMID: 27707787. 
+
 
 ## __Wisconsin | Undergrad__
 

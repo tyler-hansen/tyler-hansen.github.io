@@ -17,9 +17,7 @@ navbar:
     - href: http://github.com/tyler-hansen/
       icon: fa-github
     - href: https://twitter.com/tyler_hansen_VU
-      icon: fa-twitter 
-    - href: https://www.linkedin.com/in/tyler-hansen-7ba75273/
-      icon: fa-linkedin
+      icon: fa-twitter
 output:
   html_document:
-    theme: cosmo
+    theme: paper

@@ -14,7 +14,7 @@ __ATAC-STARR-seq__ provides the following _-omics_ on an __unbiased__ and __glob
 * Chromatin Accessibility
 * TF footprinting
 
-<img src="images/AS_genome-browser.png" style="width:100%">
+<img src="images/AS_genome-browser.png" style="width:75%">
 
 
 
