@@ -1,10 +1,20 @@
 ## __Vanderbilt | PhD__
 
+__Hansen, T.__^, Fong, S.^, Capra, J. A.%, and Hodges, E.% (2023). Human gene regulatory evolution is driven by the divergence of regulatory element function in both cis and trans. bioRxiv. doi: https://doi.org/10.1101/2023.02.14.528376
+
 __Hansen, T.__ and Hodges, E. (2022). ATAC-STARR-seq reveals transcription factor-bound activators and silencers across the chromatin accessible human genome. Genome Research 32, 1529-1541. doi: 10.1101/gr.276766.122. PMID: 35858748.
+
+Grub, L., Held, J., __Hansen, T.__,  Schaffner, S., Canter, M., Malagise,E., and Patel, M. (2023). A role for N6-methyldeoxyadenosine in C. elegans mitochondrial genome regulation. doi: https://doi.org/10.1101/2023.03.27.534452
+
+Scott, T., __Hansen, T.__, McArthur, E., and Hodges, E. (2023). Cross-tissue patterns of DNA hypomethylation reveal genetically distinct histories of cell development. bioRxiv. doi: https://doi.org/10.1101/2022.12.15.520535
 
 Barnett, K. R., Decato, B., Scott, T., __Hansen, T.__, Chen, B., Attalla, J., Smith, A., & Hodges, E. (2020).  ATAC-Me Captures Prolonged DNA Methylation of Dynamic Chromatin Accessibility Loci During Cell Fate Transitions.  Molecular Cell. 77(6), 1350–1364. doi: https://doi.org/10.1016/j.molcel.2020.01.004. PMID: 31999955.
 
 Guarnaccia, A. D., … __Hansen, T.__, … Tansey, W. P. (2021) Impact of WIN site inhibitor on the WDR5 interactome. Cell Reports. 34(3), 108636. doi: 10.1016/j.celrep.2020.108636. PMID: 33472061.
+
+^ = co-first authors
+
+% = co-corresponding authors
 
 ## __NIH | Postbac__
 

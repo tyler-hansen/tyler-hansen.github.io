@@ -13,7 +13,7 @@
 
 <title>Publications.knit</title>
 
-<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.2.1/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.2.1/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -143,11 +143,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -176,8 +180,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -185,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -294,10 +291,25 @@ $(document).ready(function () {
 
 <div id="vanderbilt-phd" class="section level2">
 <h2><strong>Vanderbilt | PhD</strong></h2>
+<p><strong>Hansen, T.</strong>^, Fong, S.^, Capra, J. A.%, and Hodges,
+E.% (2023). Human gene regulatory evolution is driven by the divergence
+of regulatory element function in both cis and trans. bioRxiv. doi: <a
+href="https://doi.org/10.1101/2023.02.14.528376"
+class="uri">https://doi.org/10.1101/2023.02.14.528376</a></p>
 <p><strong>Hansen, T.</strong> and Hodges, E. (2022). ATAC-STARR-seq
 reveals transcription factor-bound activators and silencers across the
 chromatin accessible human genome. Genome Research 32, 1529-1541. doi:
 10.1101/gr.276766.122. PMID: 35858748.</p>
+<p>Grub, L., Held, J., <strong>Hansen, T.</strong>, Schaffner, S.,
+Canter, M., Malagise,E., and Patel, M. (2023). A role for
+N6-methyldeoxyadenosine in C. elegans mitochondrial genome regulation.
+doi: <a href="https://doi.org/10.1101/2023.03.27.534452"
+class="uri">https://doi.org/10.1101/2023.03.27.534452</a></p>
+<p>Scott, T., <strong>Hansen, T.</strong>, McArthur, E., and Hodges, E.
+(2023). Cross-tissue patterns of DNA hypomethylation reveal genetically
+distinct histories of cell development. bioRxiv. doi: <a
+href="https://doi.org/10.1101/2022.12.15.520535"
+class="uri">https://doi.org/10.1101/2022.12.15.520535</a></p>
 <p>Barnett, K. R., Decato, B., Scott, T., <strong>Hansen, T.</strong>,
 Chen, B., Attalla, J., Smith, A., &amp; Hodges, E. (2020). ATAC-Me
 Captures Prolonged DNA Methylation of Dynamic Chromatin Accessibility
@@ -309,6 +321,8 @@ class="uri">https://doi.org/10.1016/j.molcel.2020.01.004</a>. PMID:
 (2021) Impact of WIN site inhibitor on the WDR5 interactome. Cell
 Reports. 34(3), 108636. doi: 10.1016/j.celrep.2020.108636. PMID:
 33472061.</p>
+<p>^ = co-first authors</p>
+<p>% = co-corresponding authors</p>
 </div>
 <div id="nih-postbac" class="section level2">
 <h2><strong>NIH | Postbac</strong></h2>

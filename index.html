@@ -13,7 +13,7 @@
 
 <title>index.knit</title>
 
-<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
@@ -32,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.2.1/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.2.1/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -143,11 +143,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -176,8 +180,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -185,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -299,21 +296,18 @@ $(document).ready(function () {
 <p><img src="images/glacier.jpg" style="width:50%" class="center"></p>
 <div id="current" class="section level4">
 <h4>Current</h4>
-<p>I’m a 6th year PhD Candidate in Dr. Emily Hodges Lab at Vanderbilt
-University. In the Hodges’ Lab, I develop and apply functional genomic
-technologies to understand gene regulatory evolution of humans. During
-the first several years of my PhD, I developed the
-<strong>ATAC-STARR-seq</strong> method, which provides genome-wide
-measures of regulatory activity, chromatin accessibility, and TF binding
-at human gene regulatory elements. After developing ATAC-STARR-seq, I
-spent the second half of my PhD applying it to investigate <em>cis</em>
-and <em>trans</em> effects on human gene regulatory evolution in
-collaboration with Dr. Tony Capra’s Lab at UCSF. I am currently wrapping
-up this project and have begun looking for Postdoctoral Fellowship
-opportunities. I’m interested in the gene regulatory evolution of human
-immune responses to pathogens. I have skills in both wet/dry lab
-techniques that allow me to both generate and analyze functional genomic
-data.</p>
+<p>I’m a recent PhD graduate and Postdoctoral Scholar in Dr. Emily
+Hodges Lab at Vanderbilt University. In the Hodges’ Lab, I develop and
+apply functional genomic technologies to understand gene regulatory
+evolution of humans. During the first several years of my PhD, I
+developed the <strong>ATAC-STARR-seq</strong> method, which provides
+genome-wide measures of regulatory activity, chromatin accessibility,
+and TF binding at human gene regulatory elements. After developing
+ATAC-STARR-seq, I spent the second half of my PhD applying it to
+investigate <em>cis</em> and <em>trans</em> effects on human gene
+regulatory evolution in collaboration with Dr. Tony Capra’s Lab at UCSF.
+I will begin a Postdoc with Dr. Luis Barreiro at University of Chicago
+sometime this summer.</p>
 </div>
 <div id="previous" class="section level4">
 <h4>Previous</h4>
