@@ -7,8 +7,6 @@ navbar:
       href: index.html
     - text: "ATAC-STARR-seq"
       href: ATAC-STARR.html
-    - text: "Publications"
-      href: Publications.html
     - text: "CV"
       href: Tyler_Hansen_CV.pdf
   right: 
