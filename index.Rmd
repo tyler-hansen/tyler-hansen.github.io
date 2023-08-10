@@ -7,7 +7,7 @@
 I'm a Postdoc in Dr. Luis Barreiro's Lab at the University of Chicago. I'm broadly interested in functional genomics and human evolution.  
 
 #### Previous 
-I obtained my Ph.D. in Biochemistry from Vanderbilt University in 2023. I worked in the Dr. Emily Hodges Lab to develop and apply functional genomic technologies to understand gene regulatory evolution of humans. uring the first several years of my PhD, I developed the __ATAC-STARR-seq__ method, which provides genome-wide measures of regulatory activity, chromatin accessibility, and TF binding at human gene regulatory elements. After developing ATAC-STARR-seq, I spent the second half of my PhD applying it to investigate _cis_ and _trans_ effects on human gene regulatory evolution in collaboration with Dr. Tony Capra's Lab at UCSF.
+I obtained my Ph.D. in Biochemistry from Vanderbilt University in 2023. I worked in the Dr. Emily Hodges Lab to develop and apply functional genomic technologies to understand gene regulatory evolution of humans. During the first several years of my PhD, I developed the __ATAC-STARR-seq__ method, which provides genome-wide measures of regulatory activity, chromatin accessibility, and TF binding at human gene regulatory elements. After developing ATAC-STARR-seq, I spent the second half of my PhD applying it to investigate _cis_ and _trans_ effects on human gene regulatory evolution in collaboration with Dr. Tony Capra's Lab at UCSF.
 
 In 2015, I graduated from the University of Wisconsin-Madison with a B.S. in Biochemistry. While there, I worked as an undergraduate researcher for 3.5 years in Dr. Judith Kimble's lab where I studied the molecular processes that dictate stem cell self-renewal and differentiation decisions in the _C. elegans_ germline. 
 
